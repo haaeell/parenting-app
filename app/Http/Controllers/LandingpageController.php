@@ -24,4 +24,7 @@ class LandingpageController extends Controller
     public function detailArtikel(){
         return view('landingpage.detail-artikel');
     }
+    public function detailDiskusi(){
+        return view('landingpage.detail-diskusi');
+    }
 }
