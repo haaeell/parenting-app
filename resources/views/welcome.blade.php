@@ -30,84 +30,7 @@
         margin-top: 170px;
         color:white;
     }
-    /* CSS untuk latar belakang navbar */
-    .navbar {
-      background-color: #00FF00; /* Hijau muda */
-      padding: 10px; /* Atur padding sesuai kebutuhan */
-    }
-
-        /* CSS untuk elemen footer */
-        .footer {
-    background-color: #659384;
-    padding: 20px;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-logo {
-    max-width: 200px;
-    max-height: 100px;
-    position: absolute; /* Menetapkan posisi absolut untuk logo */
-    left: 50%; /* Menggeser logo ke tengah secara horizontal */
-    top: 50%; /* Menggeser logo ke tengah secara vertikal */
-    transform: translate(-50%, -50%); /* Pusatkan logo di tengah */
-  }
-
-  .footer-text {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-    .footer-title {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    .footer-description {
-      font-size: 16px;
-    }
-    .footer-form {
-    display: flex;
-    align-items: center;
-  }
-
-  .footer-input {
-    padding: 8px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    width: 100%; 
-    height: 100%; 
-    background: #FCF7F1; 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-    border-radius: 5px
-  }
-
-  .footer-button {
-    padding: 8px 16px;
-    margin-top: 10px; /* Tambahkan ruang di atas tombol submit */
-    background-color: #659384;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .footer-form label {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 5px;
-  }
-
-  .form-group {
-    margin-bottom: 15px; /* Tambahkan ruang di antara kotak form */
-  }
-
+    
 
 
 
@@ -175,35 +98,6 @@
       text-align: center;
     }
 
-
-   </style>
-
-
-
-    <!-- Isi konten website Anda -->
-    <div class="container">
-        <div class="row d-flex justify-content-between align-items-center">
-            <div class="col-md-8">
-        <div style="color: black; font-size: 25px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Welcome to Parenting</div>
-        <div style="color: black; font-size: 64px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Parenting Path: <br/>Nurturing Futures, One<br/>Step at a Time</div>
-        <div style="color: black; font-size: 25px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Creating Stronger Bonds, Raising Exceptional Children</div>
-     <a href="#" class="btn mt-3 text-white px-5" style= "background-color: #659384" >About us</a>
-     </div>
-            <div class="col-md-4 ">
-                <img src="{{asset('image/a.png')}}" alt="Hero Image" class="img-fluid rounded" width="100%">
-            </div> 
-    </div>
-  
-    <section style="background-color:#C2D2C5 ">
-        <div class="container py-5  my-5">
-            <div class="row d-flex justify-content-center gap-4">
-            <div class="col-md-5 img-container pt-5 text-light"  >
-                <div class="isi-content">
-
-                    <h2>Proses untuk Memantaskan Diri Menjadi Orang Tua Teladan</h2>
-                        <p>Pola asuh sebagai sebuah proses bagaimana orang tua memperlakukan dan cara berinteraksi dengan anak didalamnya meliputi aktivitas yang bersifat ...</p>
-                </div>
-    <style>
         .img-container {
             background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('{{ asset('image/cipung.png') }}');
             background-size: cover;
@@ -291,36 +185,32 @@
                   <h4>Proses untuk Memantaskan Diri </h4>
                       <p>Pola asuh sebagai sebuah proses bagaimana  ...</p>
                   </div>
-                            <div class="isi-content2">
-
-                                <span class="badge rounded-pill mb-2 text-bg-warning text-white px-3 py-1">Badge</span>
-
-                                <h6>Proses untuk </h6>
-                            </div>
-                        </div>
-                        <div class="col-md-6 bg-warning img-container2">
-                            <div class="isi-content2">
-
-                                <span class="badge rounded-pill mb-2 text-bg-warning text-white px-3 py-1">Badge</span>
-
-                                <h6>Proses untuk </h6>
-                            </div>
-                        </div>
-                        <div class="col-md-12 bg-danger img-container3 mt-5">
-                            <div class="isi-content2">
-
-                                <span class="badge rounded-pill mb-2 text-bg-warning text-white px-3 py-1">Badge</span>
-
-                                <h4>Proses untuk Memantaskan Diri </h4>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-      
-  
-  <!-- Isi konten testimoni -->
+    </section>
+
+    <section class="shadow-lg mb-5">
+        <div class="container">
+            <div class="row vh-100 d-flex justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <h1 class="text-success fw-bold mb-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur, modi similique animi
+                        maiores quia facilis ex velit voluptates quae alias unde explicabo perferendis expedita quo eum?
+                        Corrupti quasi nostrum, doloremque sunt odit exercitationem! Culpa dolorum atque itaque animi
+                        facilis officiis velit, minima obcaecati odio, quia aut quam suscipit laudantium natus t...</p>
+                    <button class="btn btn-login px-2 mt-3 text-white">Selengkapnya</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ asset('image/cipung.png') }}" alt="Hero Image" class="img-fluid rounded" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Isi konten testimoni -->
   <div class="testimoni">
     <div style ="text-align: center; color: #1E1E1E; font-size: 40px; font-family: Poppins; font-weight: 500; word-wrap: break-word">TESTIMONIALS</div>
     <div style="text-align: center; color: black; font-size: 25px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Ini testimoni ya gais Ini testimoni ya gais<br/>Ini testimoni ya gais</div>
@@ -349,61 +239,7 @@
     </div>
   </div> 
   
-  
-   <!-- Footer -->
-   <div class="footer">
-    <div class="footer-text">
-      <h1 class="footer-title">Don't Miss Out</h1>
-      <p class="footer-description">Sign up for more health information.</p>
-    
-         <!-- Form untuk email dan password -->
-  <form action="#" method="post" class="footer-form">
-    <div class="form-group">
-      <label for="email">*EMAIL ADDRES:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" class="footer-input" required>
-    </div>
-    <div>
-    </div>
-    <div class="form-group">
-      <label for="password">*PASSWORD:</label>
-      <input type="password" id="password" name="password" placeholder="Enter your password" class="footer-input" required>
-    </div>
 
-    <!-- Tombol Submit -->
-    <div class="form-group">
-      <button type="submit" class="footer-button">
-        <div style="width: 100%; height: 100%; border-radius: 5px; border: 1.50px white solid"></div>
-        Submit
-      </button>
-    </div>
-    </div></div>
-<!-- Copyright -->
-  <div class="copyright">
-    @2023 copyright
-  </div>
-
-  
-    </section>
-
-    <section class="shadow-lg mb-5">
-        <div class="container">
-            <div class="row vh-100 d-flex justify-content-center align-items-center">
-                <div class="col-md-6">
-                    <h1 class="text-success fw-bold mb-3">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur, modi similique animi
-                        maiores quia facilis ex velit voluptates quae alias unde explicabo perferendis expedita quo eum?
-                        Corrupti quasi nostrum, doloremque sunt odit exercitationem! Culpa dolorum atque itaque animi
-                        facilis officiis velit, minima obcaecati odio, quia aut quam suscipit laudantium natus t...</p>
-                    <button class="btn btn-login px-2 mt-3 text-white">Selengkapnya</button>
-                </div>
-                <div class="col-md-6">
-                    <img src="{{ asset('image/cipung.png') }}" alt="Hero Image" class="img-fluid rounded" width="100%">
-                </div>
-            </div>
-        </div>
-    </section>
     {{-- <section class="bg-success vh-100">
         <div class="container py-5 text-white fw-bold">
             <h2 class="text-center">
