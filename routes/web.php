@@ -32,6 +32,7 @@ Route::get('/detail-diskusi', [LandingpageController::class, 'detailDiskusi'])->
 Route::group(['middleware' => 'admin'], function () {
     Route::resource('users', UserController::class);
     Route::resource('diskusi_admin', DiskusiController::class);
+    Route::resource('diskusi', DiskusiController::class);
     Route::resource('kategori-diskusi', KategoriDiskusiController::class);
 
     Route::post('users/{id}/reset-password', [UserController::class, 'resetPassword'])->name('reset-password');

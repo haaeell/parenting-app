@@ -4,62 +4,66 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Diskusi;
 
 class DiskusiController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        //
+        $diskusis = Diskusi::all();
+        return view('diskusi.index', compact('diskusis'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
-        //
+        return view('diskusi.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'topik' => 'required',
+            'pesan' => 'required',
+        ]);
+
+        Diskusi::create($request->all());
+
+        return redirect()->route('diskusi.index')
+                         ->with('success', 'Diskusi berhasil ditambahkan!');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        $diskusi = Diskusi::findOrFail($id);
+        return view('diskusi.show', compact('diskusi'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+    public function edit($id)
     {
-        //
+        $diskusi = Diskusi::findOrFail($id);
+        return view('diskusi.edit', compact('diskusi'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'topik' => 'required',
+            'pesan' => 'required',
+        ]);
+
+        $diskusi = Diskusi::findOrFail($id);
+        $diskusi->update($request->all());
+
+        return redirect()->route('diskusi.index')
+                         ->with('success', 'Diskusi berhasil diperbarui!');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+    public function destroy($id)
     {
-        //
+        $diskusi = Diskusi::findOrFail($id);
+        $diskusi->delete();
+
+        return redirect()->route('diskusi.index')
+                         ->with('success', 'Diskusi berhasil dihapus!');
     }
 }
