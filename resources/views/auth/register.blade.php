@@ -64,9 +64,9 @@
                             <div class="d-flex gap-3">
                                 <div class="flex-grow-1">
                                     <div class="mb-3 form-group">
-                                        <label for="birthdate" class="form-label">{{ __('Tanggal Lahir') }}</label>
-                                        <input style="border: none;border-bottom:2px solid #aeaeae;  background-color: transparent;"  id="birthdate" type="date" class="form-control @error('birthdate') is-invalid @enderror" name="birthdate" value="{{ old('birthdate') }}" required onFocus="this.style.borderBottom='2px solid #52b678';" onBlur="this.style.boxShadow='none';">
-                                        @error('birthdate')
+                                        <label for="birthday" class="form-label">{{ __('Tanggal Lahir') }}</label>
+                                        <input style="border: none;border-bottom:2px solid #aeaeae;  background-color: transparent;"  id="birthday" type="date" class="form-control @error('birthday') is-invalid @enderror" name="birthday" value="{{ old('birthday') }}" required onFocus="this.style.borderBottom='2px solid #52b678';" onBlur="this.style.boxShadow='none';">
+                                        @error('birthday')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
