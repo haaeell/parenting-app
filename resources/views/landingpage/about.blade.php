@@ -71,66 +71,21 @@
                         <!-- Swiper -->
                         <div class="swiper mySwiper">
                           <div class="swiper-wrapper">
+                            @foreach ($members as $item)
                             <div class="swiper-slide">
                                 <div class="card my-5 p-3" style="width: 15rem; border-top:15px solid #659384">
-                                    <img src="{{asset('/image/cipung.png')}}" class="card-img-top" alt="..." >
+                                <div style="height: 200px; overflow: hidden;">
+                                <img src="{{ asset('/public/images/' . $item->image) }}" class="card-img-top" alt="..." style="object-fit: cover; width: 100%; height: 100%;">
+                                 </div>
                                     <div class="card-body">
-                                      <h5 class="card-title">Cipung</h5>
+                                      <h5 class="card-title">{{ $item->nama }}</h5>
                                       <p>Full Stack</p>
                                       <a href="#" class="btn btn-secondary btn-about">Go somewhere</a>
                                     </div>
                                   </div>
                             </div>
-                            <div class="swiper-slide">
-                              <div class="card my-5 p-3" style="width: 15rem; border-top:15px solid #659384">
-                                  <img src="{{asset('/image/cipung.png')}}" class="card-img-top" alt="..." >
-                                  <div class="card-body">
-                                    <h5 class="card-title">Cipung</h5>
-                                    <p>Full Stack</p>
-                                    <a href="#" class="btn btn-secondary btn-about">Go somewhere</a>
-                                  </div>
-                                </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="card my-5 p-3" style="width: 15rem; border-top:15px solid #659384">
-                                <img src="{{asset('/image/cipung.png')}}" class="card-img-top" alt="..." >
-                                <div class="card-body">
-                                  <h5 class="card-title">Cipung</h5>
-                                  <p>Full Stack</p>
-                                  <a href="#" class="btn btn-secondary btn-about">Go somewhere</a>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="card my-5 p-3" style="width: 15rem; border-top:15px solid #659384">
-                              <img src="{{asset('/image/cipung.png')}}" class="card-img-top" alt="..." >
-                              <div class="card-body">
-                                <h5 class="card-title">Cipung</h5>
-                                <p>Full Stack</p>
-                                <a href="#" class="btn btn-secondary btn-about">Go somewhere</a>
-                              </div>
-                            </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="card my-5 p-3" style="width: 15rem; border-top:15px solid #659384">
-                            <img src="{{asset('/image/cipung.png')}}" class="card-img-top" alt="..." >
-                            <div class="card-body">
-                              <h5 class="card-title">Cipung</h5>
-                              <p>Full Stack</p>
-                              <a href="#" class="btn btn-secondary btn-about">Go somewhere</a>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card my-5 p-3" style="width: 15rem; border-top:15px solid #659384">
-                          <img src="{{asset('/image/cipung.png')}}" class="card-img-top" alt="..." >
-                          <div class="card-body">
-                            <h5 class="card-title">Cipung</h5>
-                            <p>Full Stack</p>
-                            <a href="#" class="btn btn-secondary btn-about">Go somewhere</a>
-                          </div>
-                        </div>
-                  </div>
+                            @endforeach
+                            
                           </div>
                           <div class="swiper-button-next"></div>
                           <div class="swiper-button-prev"></div>
@@ -140,7 +95,7 @@
                         
                     
                 </div>
-            </div>
+            </div>  
         </div>      
     </div>
     <!-- Swiper JS -->

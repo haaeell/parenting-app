@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Member;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
 
@@ -14,7 +14,8 @@ class LandingpageController extends Controller
     }
     public function about()
     {
-        return view('landingpage.about');
+        $members = Member::all();
+        return view('landingpage.about',compact('members'));
     }
     public function artikel()
     {
