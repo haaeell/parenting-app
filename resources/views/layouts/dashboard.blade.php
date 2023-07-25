@@ -141,14 +141,14 @@
             <li class="menu-header small text-uppercase"><span class="menu-header-text">Master</span></li>
             
             <!-- User interface -->
-            <li class="menu-item">
+            <li class="menu-item {{ request()->is('artikels') ?'active' : ''}}">
               <a href="javascript:void(0)" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-box"></i>
                 <div data-i18n="User interface">Artikel</div>
               </a>
-              <ul class="menu-sub">
+              <ul class="menu-sub {{ request()->is('artikels') ?'active' : ''}}">
                 <li class="menu-item">
-                  <a href="ui-typography.html" class="menu-link">
+                  <a href="{{route('artikels.index')}}" class="menu-link">
                     <div data-i18n="Typography">Data Artikel</div>
                   </a>
                 </li>
