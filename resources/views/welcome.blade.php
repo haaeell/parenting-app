@@ -11,41 +11,6 @@
             overflow: hidden;
             height: 200px;
         }
-        .img-container {
-            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('{{ asset('image/cipung.png') }}');
-            background-size: cover;
-            background-posisition: center;
-
-            border-radius: 32px;
-        }
-
-        .img-container2 {
-
-            border-radius: 32px;
-            width: 50%;
-            height: 300px;
-            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('{{ asset('image/cipung.png') }}');
-            background-size: cover;
-            background-posisition: center;
-        }
-
-        .img-container3 {
-            border-radius: 32px;
-            width: cipung00%;
-            height: cipung00%;
-            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('{{ asset('image/cipung.png') }}');
-            background-size: cover;
-            background-posisition: center;
-        }
-
-        .isi-content {
-            margin-top: 350px;
-        }
-
-        .isi-content2 {
-            margin-top: 230px;
-            color: white;
-        }
 
         .swiper {
             width: 100%;
@@ -131,13 +96,13 @@
                     <h3 class="fw-semibold text-success">Halooo {{Auth::user()->name}}<i class="bi bi-balloon-heart-fill text-danger fw-semiboldel"></i></h3>
                     @endauth
                     <h5 class="fw-semibold " >Welcome to ParentApp! </h5>
-                    <h1 style="font-size:50px;" class="fw-bold text-success">Parenting Path: Nurturing Futures, One Step at a Time
+                    <h1 style="font-size:50px;" class="fw-bold text-success">Jelajahi Kebaikan Parenting: Sumber Inspirasi untuk Orangtua yang Penuh Dedikasi
                     </h1>
-                    <p class="lh-base">Selamat datang di Parent-app! Kami hadir untuk membantu Anda memperkuat hubungan dengan anak Anda dan mendidik mereka menjadi anak-anak yang luar biasa. Dengan akses mudah ke informasi, panduan praktis, dan pemantauan perkembangan</p>
+                    <p class="lh-base">Selamat datang di Parentapp! Hadir untuk mendukung Anda dalam mengerti anak-anak tercinta dan membantu tumbuh menjadi individu yang luar biasa. Bersama kami panduan praktis, kami berkomitmen untuk menjadi mitra setia dalam perjalanan indah Anda.</p>
                     <a href="{{ route('about') }}" data-aos="fade-right" data-aos-duration="1500" class="btn mt-3 btn-login px-5 mb-3">About us</a>
                 </div>
                 <div class="col-md-4 ">
-                    <img src="{{ asset('image/cipung.png') }}"  data-aos="zoom-in-down" alt="Hero Image" class="img-fluid rounded" width="100%">
+                    <img src="{{ asset('image/imghero.jpeg') }}"  data-aos="zoom-in-down" alt="Hero Image" class="img-fluid rounded" width="100%">
                 </div>
             </div>
         </div>
@@ -153,7 +118,7 @@
                     <h2 class="text-center fw-bold text-success">Our Services</h2>
                 </div>
                 <div class="col-md-5 text-center">
-                    <p>Terdapat 3 fitur utama di parent-app yang bisa digunakan sebaik mungkin</p>
+                    <p>Nikmati 3 fitur utama di Parent-app dengan maksimal!</p>
                 </div>
             </div>
 
@@ -161,33 +126,33 @@
                 <div class="col-md-3 mb-3" data-aos="fade-right">
                     <div class="card text-center card-fitur p-3 border-0 shadow">
                         <div class="d-flex justify-content-center align-items-center">
-                            <img src="{{ asset('image/cipung.png') }}" alt="Hero Image" class="img-fluid rounded-circle" width="30%">
+                            <img src="{{ asset('image/testicon.jpeg') }}" alt="Hero Image" class="img-fluid rounded-circle" width="30%">
                         </div>
                         <div class="feature-content">
                             <h4 class="fw-semibold my-3">Tes Parenting</h4>
-                            <p>Tes parenting mengevaluasi cara orang tua mendidik anak dan ciptakan lingkungan positif.</p>
+                            <p>Uji kemampuan parenting untuk mengevaluasi pendekatan mendidik anak.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 mb-3" data-aos="fade-up">
                     <div class="card text-center card-fitur p-3 border-0 shadow">
                         <div class="d-flex justify-content-center align-items-center">
-                            <img src="{{ asset('image/cipung.png') }}" alt="Hero Image" class="img-fluid rounded-circle" width="30%">
+                            <img src="{{ asset('image/discusicon.jpeg') }}" alt="Hero Image" class="img-fluid rounded-circle" width="30%">
                         </div>
                         <div class="feature-content">
                             <h4 class="fw-semibold my-3">Forum Diskusi</h4>
-                            <p>Forum diskusi adalah platform daring untuk berinteraksi dan bertukar ide.</p>
+                            <p>Forum diskusi, platform daring untuk berinteraksi dan berbagi ide secara aktif.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 mb-3"data-aos="fade-left">
                     <div class="card text-center card-fitur p-3 border-0 shadow">
                         <div class="d-flex justify-content-center align-items-center">
-                            <img src="{{ asset('image/cipung.png') }}" alt="Hero Image" class="img-fluid rounded-circle" width="30%">
+                            <img src="{{ asset('image/articicon.jpeg') }}" alt="Hero Image" class="img-fluid rounded-circle" width="30%">
                         </div>
                         <div class="feature-content">
                             <h4 class="fw-semibold my-3">Artikel</h4>
-                            <p> Temukan wawasan menarik di artikel kami , isi terstruktur, fakta relevan. Baca sekarang!</p>
+                            <p>Mari temukan artikel menarik dengan isi terstruktur. Baca sekarang!</p>
                         </div>
                     </div>
                 </div>
@@ -201,23 +166,23 @@
         <div class="container">
             <div class="row  d-flex justify-content-center align-items-center">
                 <div class="col-md-6" data-aos="fade-up">
-                    <img src="{{ asset('image/cipung.png') }}" alt="Hero Image" class="img-fluid rounded" width="100%">
+                    <img src="{{ asset('image/herobawah.jpeg') }}" alt="Hero Image" class="img-fluid rounded" width="100%">
                 </div>
                 <div class="col-md-6">
                     <div  data-aos="fade-down">
 
-                        <span class="text-success fw-semibold">~ Lorem khj</span>
+                        <span class="text-success fw-semibold">Kenapa Memilih</span>
                         <h1 class="text-success fw-bold mb-3">
-                            Why Parent-app ?
+                            ParentApp?
                         </h1>
-                        <p>Dengan menggunakan aplikasi ini Terdapat 3 kelebihan yang para orang tua wajib anda ketahui sekarang juga!</p>
+                        <p>Kenali 3 kelebihan penting aplikasi ini yang harus diketahui oleh para orang tua sekarang!</p>
                     </div>
                     <div class="mb-2 card-why d-flex align-items-center justify-content-center gap-3 px-3 " data-aos="fade-right">
                         <div class="col-md-2 text-center fs-1 text-success">
                             <i class="bi bi-airplane-engines-fill"></i>
                         </div>
                         <div class="col-md-10 pt-3">
-                            <p>  <b class="text-success">Kemudahan Akses Informasi : </b>Aplikasi ini memberikan akses mudah dan cepat ke informasi bermanfaat seputar perkembangan anak, pola asuh, kesehatan, dan pendidikan. </p>
+                            <p>  <b class="text-success">Akses Informasi Lebih Mudah:</b> Nikmati kemudahan dan kecepatan akses informasi seputar perkembangan anak, pola asuh, kesehatan, dan pendidikan melalui aplikasi ini.</p>
                         </div>
                     </div>
                     <div class="mb-2 card-why d-flex align-items-center justify-content-center gap-3 px-3 " data-aos="fade-right"data-aos-delay="100">
@@ -225,7 +190,7 @@
                             <i class="bi bi-person-hearts"></i>
                         </div>
                         <div class="col-md-10 pt-3">
-                            <p><b class="text-success">Panduan Pola Asuh : </b>Aplikasi parenting menyediakan panduan praktis untuk pola asuh yang efektif. Orang tua dapat mengakses strategi pengasuhan yang terbukti berhasil</p>
+                            <p><b class="text-success">Panduan Pola Asuh Efektif:</b>ParentApp menyediakan panduan untuk pola asuh. Temukan strategi pengasuhan yang dapat diandalkan oleh para orang tua.</p>
                         </div>
                     </div>
                     <div class="mb-2 card-why d-flex align-items-center justify-content-center gap-3 px-3 "data-aos="fade-right"data-aos-delay="200">
@@ -233,7 +198,7 @@
                             <i class="bi bi-eye-fill"></i>
                         </div>
                         <div class="col-md-10  pt-3">
-                            <p><b class="text-success">Pemantauan Perkembangan Anak : </b>Aplikasi ini memungkinkan orang tua untuk mencatat dan memantau perkembangan fisik, kognitif, dan emosional anak. </p>
+                            <p><b class="text-success">Pemantauan Perkembangan Anak:</b>ParentApp memudahkan orang tua dalam memantau perkembangan fisik, kognitif, dan emosional anak dengan lebih praktis.</p>
                         </div>
                     </div>
                 </div>
@@ -244,6 +209,7 @@
     {{-- ARTICLES --}}
     <section class="my-5 ">
         <div class="container">
+            
             <div class="row d-flex flex-column align-items-center justify-content-center py-3"data-aos="zoom-in-up" >
                 <div class="col-md-5">
 
@@ -265,8 +231,9 @@
                             
                             <span class="badge rounded-pill text-bg-success text-white px-3 py-1 mb-2" >{{$item->category->name}}</span>
                         </div>
+                        
                         <div class="d-flex align-items-center gap-3 ">
-                            <img src="{{ asset('image/cipung.png') }}" alt="Hero Image" width="20%">
+                            <img src="{{ asset('image/people.jpeg') }}" alt="Hero Image" width="20%">
                             <div class="flex-column mt-3">
                                 
                             <span class="fw-semibold">Hifni Sadboyyyy</span>
@@ -311,7 +278,7 @@
                             @foreach ($testimonials as $item)
                             <div class="swiper-slide py-5">
                                 <div class="card-testimonial p-4">
-                                    <img src="{{ asset('image/cipung.png') }}" alt="Hero Image" class="img-fluid img-testimonial" width="30%">
+                                    <img src="{{ asset('image/people.jpeg') }}" alt="Hero Image" class="img-fluid img-testimonial" width="25%">
                                     <h5 class="fw-semibold mt-3">{{$item->user->name}}</h5>
                                     <p class="fs-6">
                                         @php
